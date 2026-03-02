@@ -10,6 +10,32 @@ import '../styles/global.css';
   <title>Wes Foster</title>
   <meta name="description" content="Army veteran, entrepreneur, and agency founder. Building WESFED, ClawDeploy, AI Agent Lab, and Peak Agency Systems." />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <script type="application/ld+json" is:inline>
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Wes Foster",
+    "alternateName": ["realwesfoster", "wesf90", "wesfed"],
+    "url": "https://wesfoster.com",
+    "image": "https://wesfoster.com/wes.jpg",
+    "jobTitle": "Entrepreneur, Agency Founder, Digital Marketer",
+    "description": "Army veteran and entrepreneur. Founder of WESFED digital marketing agency. Builder of AI Agent Lab, Peak Agency Systems, and ClawDeploy. Speaker, marketer, and agency growth coach based in Clarksville, TN.",
+    "address": { "@type": "PostalAddress", "addressLocality": "Clarksville", "addressRegion": "TN", "addressCountry": "US" },
+    "alumniOf": [{ "@type": "EducationalOrganization", "name": "Grantham University" }],
+    "knowsAbout": ["Digital Marketing","Agency Growth","SEO","PPC","AI Agents","Marketing Automation","Entrepreneurship","MRR Growth","Agency Systems","Web Development"],
+    "sameAs": [
+      "https://x.com/realwesfoster",
+      "https://linkedin.com/in/wesfoster",
+      "https://github.com/wesf90",
+      "https://facebook.com/realwesfoster",
+      "https://youtube.com/@wesfosterpeak",
+      "https://wesfed.com",
+      "https://themondayreset.com"
+    ],
+    "founder": [{ "@type": "Organization", "name": "WESFED", "url": "https://wesfed.com", "description": "Digital marketing agency founded in 2008, headquartered in Clarksville, TN. Privately valued at over $3 million." }],
+    "memberOf": [{ "@type": "Organization", "name": "United States Army", "description": "Combat Infantry Team Leader, deployed to Afghanistan 2010-2011" }]
+  }
+  </script>
   <script is:inline>
     (function() {
       var t = localStorage.getItem('wf-theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
@@ -27,6 +53,12 @@ import '../styles/global.css';
     <div class="hero-text">
       <p class="hero-name">Wes Foster</p>
       <p class="hero-tagline">veteran · marketer · builder · agency founder</p>
+      <div class="hero-stats">
+        <span class="hero-stat"><strong>15+ yrs</strong> in business</span>
+        <span class="hero-stat"><strong>$3M+</strong> agency valuation</span>
+        <span class="hero-stat"><strong>2,000+</strong> community members</span>
+        <span class="hero-stat"><strong>Top 5%</strong> StackOverflow</span>
+      </div>
       <p class="hero-bio">
         Army veteran and founder of <a href="https://wesfed.com" target="_blank" rel="noopener">WESFED</a>.
         I help agency operators grow their MRR, build AI tools for founders, and write about
@@ -149,11 +181,21 @@ import '../styles/global.css';
       <p class="sec-label">About</p>
       <div class="about-grid">
         <p class="about-bio">
-          I'm an Army Combat Infantry veteran — deployed to Afghanistan in 2010–11. After the military,
-          I threw myself into software and marketing, eventually founding <strong>WESFED</strong>,
-          which has grown to a $3M+ private valuation. Today I run communities and products for agency
-          owners, consult on AI systems, and write about what actually works. I believe in building lean,
-          building deliberately, and never scaling past what you can control.
+          Wes Foster is an American entrepreneur, digital marketer, and Army veteran based in Clarksville, Tennessee.
+          He served as a Combat Infantry Team Leader in the United States Army, including a deployment to Afghanistan in 2010–11.
+          After leaving the military, Foster transitioned into software and marketing, earning an MBA and a BS in Computer Science
+          (Summa Cum Laude) from Grantham University.
+          <br /><br />
+          In 2008, Foster founded <strong>WESFED</strong>, a full-service digital marketing agency specializing in SEO, PPC,
+          and web development. The agency has grown to a privately estimated valuation of over $3 million and serves clients
+          across the United States. He is also the creator of the <strong>PEAK Agency Model</strong>, a framework for running
+          a lean, profitable agency without scaling headcount proportionally to revenue.
+          <br /><br />
+          Foster runs <strong>Peak Agency Systems</strong>, a paid coaching community for agency operators, and
+          <strong>AI Agent Lab</strong>, a free community for agency owners learning to build with AI and automation.
+          He publishes <em>The Monday Reset</em>, a weekly newsletter, and creates content on YouTube under
+          @wesfosterpeak focused on agency growth, AI tools, and building sustainable businesses.
+          He has spoken at marketing and entrepreneurship conferences since 2016 and is a top 5% contributor on Stack Overflow.
         </p>
         <ul class="accom-list">
           <li><span class="accom-dot">◆</span> Founded WESFED — grown to $3M+ private valuation</li>

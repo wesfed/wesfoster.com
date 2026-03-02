@@ -140,6 +140,17 @@ body {
 
 .hero-bio a:hover { border-bottom-color: var(--accent); }
 
+.hero-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem 1.25rem;
+  margin-top: 0.65rem;
+  margin-bottom: 0.55rem;
+}
+
+.hero-stat { font-size: 0.76rem; color: var(--muted); white-space: nowrap; }
+.hero-stat strong { color: var(--text); font-weight: 600; }
+
 .hero-speaking {
   font-size: 0.78rem;
   color: var(--muted);
