@@ -8,7 +8,7 @@ import '../styles/global.css';
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Wes Foster</title>
-  <meta name="description" content="Army veteran, entrepreneur, and agency founder. Clarksville, TN." />
+  <meta name="description" content="Army veteran, entrepreneur, and agency founder. Building WESFED, ClawDeploy, AI Agent Lab, and Peak Agency Systems." />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <script is:inline>
     (function() {
@@ -21,148 +21,169 @@ import '../styles/global.css';
 
   <ThemeToggle />
 
-  <div class="bento">
-
-    <!-- ── Intro (4 cols × 2 rows) ── -->
-    <div class="card card-intro s4 r2">
-      <img src="/wes.jpg" alt="Wes Foster" class="intro-photo" width="58" height="58" />
-      <p class="intro-name">Wes Foster</p>
-      <p class="intro-tagline">veteran · marketer · builder · agency founder</p>
-      <p class="intro-bio">
+  <!-- ── Hero ── -->
+  <header class="hero">
+    <img src="/wes.jpg" alt="Wes Foster" class="hero-photo" width="76" height="76" />
+    <div class="hero-text">
+      <p class="hero-name">Wes Foster</p>
+      <p class="hero-tagline">veteran · marketer · builder · agency founder</p>
+      <p class="hero-bio">
         Army veteran and founder of <a href="https://wesfed.com" target="_blank" rel="noopener">WESFED</a>.
-        I help agency operators grow their MRR, build AI tools for founders, and write about all of it.
-        Based in Clarksville, TN.
+        I help agency operators grow their MRR, build AI tools for founders, and write about
+        what I learn along the way. Based in Clarksville, TN.
       </p>
-      <p class="intro-speaking">
-        Open to speaking and podcast appearances &mdash;
+      <p class="hero-speaking">
+        Open to speaking and podcast appearances —
         <a href="mailto:wes@wesfed.com">wes@wesfed.com</a>
       </p>
     </div>
+  </header>
 
-    <!-- ── Blog (2 cols) ── -->
-    <a href="/blog" class="card s2">
-      <span class="ctag">Blog</span>
-      <span class="cname">Blog</span>
-      <span class="cdesc">Agency growth, AI, and building things that last.</span>
-    </a>
+  <main>
 
-    <!-- ── YouTube (2 cols) ── -->
-    <a href="https://youtube.com/@wesfosterpeak" target="_blank" rel="noopener" class="card card-yt s2">
-      <span class="yt-play">▶</span>
-      <span class="ctag">YouTube</span>
-      <span class="cname">@wesfosterpeak</span>
-      <span class="cdesc">Agency growth, AI tools, and building lean businesses.</span>
-    </a>
+    <!-- ── Projects ── -->
+    <section class="section">
+      <p class="sec-label">Projects</p>
+      <div class="card-grid">
 
-    <!-- ── Projects row 1 (3 × span-2) ── -->
-    <a href="https://wesfed.com" target="_blank" rel="noopener" class="card s2">
-      <span class="ctag">Agency</span>
-      <span class="cname">WESFED</span>
-      <span class="cdesc">Digital marketing agency. SEO, PPC, web — since 2008.</span>
-    </a>
+        <a href="https://wesfed.com" target="_blank" rel="noopener" class="card">
+          <span class="ctag">Agency</span>
+          <span class="cname">WESFED</span>
+          <span class="cdesc">Digital marketing agency — SEO, PPC, web — founded 2008, based in Clarksville, TN.</span>
+        </a>
 
-    <a href="https://clawdeploy.com" target="_blank" rel="noopener" class="card s2">
-      <span class="ctag">Project</span>
-      <span class="cname">ClawDeploy</span>
-      <span class="cdesc">OpenClaw-as-a-Service. Deploy and manage instances without the headache.</span>
-    </a>
+        <a href="https://clawdeploy.com" target="_blank" rel="noopener" class="card">
+          <span class="ctag">SaaS</span>
+          <span class="cname">ClawDeploy</span>
+          <span class="cdesc">OpenClaw-as-a-Service. Deploy and manage instances without the setup headache.</span>
+        </a>
 
-    <a href="https://skool.com/aiagentlab" target="_blank" rel="noopener" class="card s2">
-      <span class="ctag">Community · Free</span>
-      <span class="cname">AI Agent Lab</span>
-      <span class="cdesc">Free community for agency owners learning to build with AI.</span>
-    </a>
+        <a href="https://skool.com/aiagentlab" target="_blank" rel="noopener" class="card">
+          <span class="ctag">Community · Free</span>
+          <span class="cname">AI Agent Lab</span>
+          <span class="cdesc">Free community for agency owners learning to build with AI agents and automation.</span>
+        </a>
 
-    <!-- ── Projects row 2 (span-3 + span-3) ── -->
-    <a href="https://peakagencysystems.com/slack26" target="_blank" rel="noopener" class="card s3">
-      <span class="ctag">Community · Paid</span>
-      <span class="cname">Peak Agency Systems</span>
-      <span class="cdesc">The community and playbook for operators scaling with the PEAK Model.</span>
-    </a>
+        <a href="https://peakagencysystems.com/slack26" target="_blank" rel="noopener" class="card">
+          <span class="ctag">Community · Paid</span>
+          <span class="cname">Peak Agency Systems</span>
+          <span class="cdesc">The community and coaching program for agency operators scaling with the PEAK Model.</span>
+        </a>
 
-    <a href="https://themondayreset.com" target="_blank" rel="noopener" class="card s3">
-      <span class="ctag">Newsletter</span>
-      <span class="cname">The Monday Reset</span>
-      <span class="cdesc">Weekly newsletter for agency operators. Practical, no fluff.</span>
-    </a>
+        <a href="https://themondayreset.com" target="_blank" rel="noopener" class="card card-full">
+          <span class="ctag">Newsletter</span>
+          <span class="cname">The Monday Reset</span>
+          <span class="cdesc">Weekly newsletter for agency operators. Practical takes on growth, systems, and AI — no fluff.</span>
+        </a>
 
-    <!-- ── Tools I Use (full width) ── -->
-    <div class="card s6">
-      <span class="clabel">Tools I Use</span>
-      <div class="tool-grid">
-        <!-- TODO: replace href values with your affiliate links -->
-        <a href="https://tella.tv" target="_blank" rel="noopener" class="tool-chip">Tella</a>
-        <a href="https://whisprflow.com" target="_blank" rel="noopener" class="tool-chip">Whispr Flow</a>
-        <a href="https://slack.com" target="_blank" rel="noopener" class="tool-chip">Slack</a>
-        <a href="https://clickup.com" target="_blank" rel="noopener" class="tool-chip">ClickUp</a>
-        <a href="https://gmail.com" target="_blank" rel="noopener" class="tool-chip">Gmail</a>
-        <a href="https://obsidian.md" target="_blank" rel="noopener" class="tool-chip">Obsidian</a>
-        <a href="https://android.com" target="_blank" rel="noopener" class="tool-chip">Android</a>
-        <a href="https://plexamp.com" target="_blank" rel="noopener" class="tool-chip">Plexamp</a>
-        <a href="https://brave.com" target="_blank" rel="noopener" class="tool-chip">Brave</a>
-        <a href="https://firefox.com" target="_blank" rel="noopener" class="tool-chip">Firefox</a>
-        <a href="https://tailscale.com" target="_blank" rel="noopener" class="tool-chip">Tailscale</a>
-        <a href="https://signal.org" target="_blank" rel="noopener" class="tool-chip">Signal</a>
-        <a href="https://protonvpn.com" target="_blank" rel="noopener" class="tool-chip">ProtonVPN</a>
-        <a href="https://nordvpn.com" target="_blank" rel="noopener" class="tool-chip">NordVPN</a>
-        <a href="https://zoom.us" target="_blank" rel="noopener" class="tool-chip">Zoom</a>
-        <a href="https://netlify.com" target="_blank" rel="noopener" class="tool-chip">Netlify</a>
-        <a href="https://discord.com" target="_blank" rel="noopener" class="tool-chip">Discord</a>
-        <a href="https://thelounge.chat" target="_blank" rel="noopener" class="tool-chip">The Lounge</a>
-        <a href="https://learn.microsoft.com/en-us/windows/wsl/" target="_blank" rel="noopener" class="tool-chip">WSL</a>
-        <a href="https://sublimetext.com" target="_blank" rel="noopener" class="tool-chip">Sublime Text</a>
-        <a href="https://play.google.com/store/apps/details?id=com.deskangel.daremote" target="_blank" rel="noopener" class="tool-chip">DaRemote</a>
       </div>
-      <p class="aff-note">Some links are affiliate links — costs you nothing, helps me out.</p>
-    </div>
+    </section>
 
-    <!-- ── Social (full width) ── -->
-    <div class="card s6">
-      <span class="clabel">Social</span>
-      <div class="social-chips">
+    <!-- ── Content ── -->
+    <section class="section">
+      <p class="sec-label">Content</p>
+      <div class="card-grid">
+
+        <a href="https://youtube.com/@wesfosterpeak" target="_blank" rel="noopener" class="card card-yt">
+          <span class="yt-play">▶</span>
+          <span class="ctag">YouTube</span>
+          <span class="cname">@wesfosterpeak</span>
+          <span class="cdesc">Agency growth, AI tools, and building profitable businesses without burning out.</span>
+        </a>
+
+        <a href="/blog" class="card">
+          <span class="ctag">Blog</span>
+          <span class="cname">Blog</span>
+          <span class="cdesc">Longer-form writing on agency growth, AI, and building systems that scale.</span>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- ── Tools ── -->
+    <section class="section">
+      <p class="sec-label">Tools I Use</p>
+      <div class="card">
+        <div class="tool-grid">
+          <!-- Replace these hrefs with your affiliate links -->
+          <a href="https://tella.tv" target="_blank" rel="noopener" class="tool-chip">Tella</a>
+          <a href="https://whisprflow.com" target="_blank" rel="noopener" class="tool-chip">Whispr Flow</a>
+          <a href="https://slack.com" target="_blank" rel="noopener" class="tool-chip">Slack</a>
+          <a href="https://clickup.com" target="_blank" rel="noopener" class="tool-chip">ClickUp</a>
+          <a href="https://gmail.com" target="_blank" rel="noopener" class="tool-chip">Gmail</a>
+          <a href="https://obsidian.md" target="_blank" rel="noopener" class="tool-chip">Obsidian</a>
+          <a href="https://android.com" target="_blank" rel="noopener" class="tool-chip">Android</a>
+          <a href="https://plexamp.com" target="_blank" rel="noopener" class="tool-chip">Plexamp</a>
+          <a href="https://brave.com" target="_blank" rel="noopener" class="tool-chip">Brave</a>
+          <a href="https://firefox.com" target="_blank" rel="noopener" class="tool-chip">Firefox</a>
+          <a href="https://tailscale.com" target="_blank" rel="noopener" class="tool-chip">Tailscale</a>
+          <a href="https://signal.org" target="_blank" rel="noopener" class="tool-chip">Signal</a>
+          <a href="https://protonvpn.com" target="_blank" rel="noopener" class="tool-chip">ProtonVPN</a>
+          <a href="https://nordvpn.com" target="_blank" rel="noopener" class="tool-chip">NordVPN</a>
+          <a href="https://zoom.us" target="_blank" rel="noopener" class="tool-chip">Zoom</a>
+          <a href="https://netlify.com" target="_blank" rel="noopener" class="tool-chip">Netlify</a>
+          <a href="https://discord.com" target="_blank" rel="noopener" class="tool-chip">Discord</a>
+          <a href="https://thelounge.chat" target="_blank" rel="noopener" class="tool-chip">The Lounge</a>
+          <a href="https://learn.microsoft.com/en-us/windows/wsl/" target="_blank" rel="noopener" class="tool-chip">WSL</a>
+          <a href="https://sublimetext.com" target="_blank" rel="noopener" class="tool-chip">Sublime Text</a>
+          <a href="https://play.google.com/store/apps/details?id=com.deskangel.daremote" target="_blank" rel="noopener" class="tool-chip">DaRemote</a>
+        </div>
+        <p class="aff-note">Some links may be affiliate links — costs you nothing, helps support the work.</p>
+      </div>
+    </section>
+
+    <!-- ── Social ── -->
+    <section class="section">
+      <p class="sec-label">Social</p>
+      <div class="social-row">
         <a href="https://x.com/realwesfoster" target="_blank" rel="noopener" class="social-chip">X @realwesfoster</a>
-        <a href="https://instagram.com/realwesfoster" target="_blank" rel="noopener" class="social-chip">Instagram</a><!-- TODO: confirm IG handle -->
+        <a href="https://instagram.com/realwesfoster" target="_blank" rel="noopener" class="social-chip">Instagram</a><!-- TODO: confirm handle -->
         <a href="https://facebook.com/realwesfoster" target="_blank" rel="noopener" class="social-chip">Facebook</a>
         <a href="https://linkedin.com/in/wesfoster" target="_blank" rel="noopener" class="social-chip">LinkedIn</a>
         <a href="https://github.com/wesf90" target="_blank" rel="noopener" class="social-chip">GitHub @wesf90</a>
       </div>
-    </div>
+    </section>
 
-    <!-- ── About (full width, 2-col inner) ── -->
-    <div class="card s6">
-      <span class="clabel">About</span>
-      <div class="about-inner">
+    <!-- ── About ── -->
+    <section class="section">
+      <p class="sec-label">About</p>
+      <div class="about-grid">
         <p class="about-bio">
-          I'm an Army Combat Infantry veteran who deployed to Afghanistan in 2010–11.
-          After the military, I threw myself into software and marketing — eventually founding
-          <strong>WESFED</strong> in 2008, which has grown to a $3M+ private valuation.
-          Today I run multiple communities and products for agency owners, consult on AI systems,
-          and write about what actually works. I believe in building lean, building deliberately,
-          and never scaling past what you can control.
+          I'm an Army Combat Infantry veteran — deployed to Afghanistan in 2010–11. After the military,
+          I threw myself into software and marketing, eventually founding <strong>WESFED</strong>,
+          which has grown to a $3M+ private valuation. Today I run communities and products for agency
+          owners, consult on AI systems, and write about what actually works. I believe in building lean,
+          building deliberately, and never scaling past what you can control.
         </p>
         <ul class="accom-list">
-          <li><span class="accom-dot">◆</span> Founded WESFED — $3M+ private valuation</li>
+          <li><span class="accom-dot">◆</span> Founded WESFED — grown to $3M+ private valuation</li>
           <li><span class="accom-dot">◆</span> US Army Combat Infantry, Afghanistan 2010–11</li>
           <li><span class="accom-dot">◆</span> Top 5% StackOverflow contributor worldwide</li>
-          <li><span class="accom-dot">◆</span> Speaker at conferences &amp; events since 2016</li>
+          <li><span class="accom-dot">◆</span> Speaker at conferences and events since 2016</li>
           <li><span class="accom-dot">◆</span> Built startup tech that raised $1M+, 2014–16</li>
           <li><span class="accom-dot">◆</span> MBA + BS Computer Science, Summa Cum Laude</li>
         </ul>
       </div>
-    </div>
+    </section>
 
-  </div><!-- /bento -->
+  </main>
+
+  <footer class="site-footer">
+    <span>Wes Foster · Clarksville, TN</span>
+    <a href="https://wesfed.com" target="_blank" rel="noopener">wesfed.com</a>
+    <a href="mailto:wes@wesfed.com">wes@wesfed.com</a>
+  </footer>
 
   <script>
-    // Staggered card fade-in on load
-    document.querySelectorAll('.bento .card').forEach((card, i) => {
-      (card as HTMLElement).style.opacity = '0';
-      (card as HTMLElement).style.transform = 'translateY(10px)';
-      (card as HTMLElement).style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+    document.querySelectorAll('.section').forEach((el, i) => {
+      const s = el as HTMLElement;
+      s.style.opacity = '0';
+      s.style.transform = 'translateY(12px)';
+      s.style.transition = 'opacity 0.45s ease, transform 0.45s ease';
       setTimeout(() => {
-        (card as HTMLElement).style.opacity = '1';
-        (card as HTMLElement).style.transform = 'translateY(0)';
-      }, 60 + i * 45);
+        s.style.opacity = '1';
+        s.style.transform = 'translateY(0)';
+      }, 100 + i * 80);
     });
   </script>
 
