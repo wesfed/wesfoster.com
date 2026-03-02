@@ -8,7 +8,7 @@ import '../styles/global.css';
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Wes Foster</title>
-  <meta name="description" content="Veteran. Marketer. Builder. Founder of WESFED." />
+  <meta name="description" content="Army veteran, entrepreneur, and agency founder. Building WESFED, ClawDeploy, AI Agent Lab, and Peak Agency Systems from Clarksville, TN." />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
   <!-- Prevent flash of wrong theme -->
@@ -25,20 +25,58 @@ import '../styles/global.css';
   <ThemeToggle />
 
   <header class="site-header">
-    <p class="site-name">Wes Foster</p>
-    <p class="site-tagline">veteran · marketer · builder</p>
+    <img src="/wes.jpg" alt="Wes Foster" class="site-photo" width="68" height="68" />
+    <div class="site-header-text">
+      <p class="site-name">Wes Foster</p>
+      <p class="site-tagline">veteran · marketer · builder · agency founder</p>
+    </div>
   </header>
 
   <main>
+
+    <!-- About -->
+    <section class="section">
+      <p class="section-label">About</p>
+      <p class="about-text">
+        I'm an Army veteran, entrepreneur, and founder of <strong><a href="https://wesfed.com" target="_blank" rel="noopener">WESFED</a></strong> — a digital marketing agency based in Clarksville, TN that I've been building since 2008. I spend my time helping agencies grow their MRR using the PEAK Agency Model, building AI tools for operators, and writing about what I learn along the way.
+      </p>
+    </section>
+
+    <!-- Speaking & Podcast -->
+    <section class="section">
+      <p class="section-label">Speaking & Podcast Appearances</p>
+      <div class="speaking-card">
+        <ul class="speaking-topics">
+          <li>Agency growth, MRR systems, and the PEAK Agency Model</li>
+          <li>AI agents and automation for agency owners</li>
+          <li>Veteran entrepreneurship and the transition from service to business</li>
+          <li>Building profitable agencies without burning out</li>
+        </ul>
+        <p class="speaking-cta">
+          Available for events, podcasts, and panels. Reach out at
+          <a href="mailto:wes@wesfed.com">wes@wesfed.com</a> or
+          <a href="https://x.com/realwesfoster" target="_blank" rel="noopener">DM on X</a>.
+        </p>
+      </div>
+    </section>
+
+    <!-- Accomplishments -->
+    <section class="section">
+      <p class="section-label">Accomplishments</p>
+      <ul class="accom-list">
+        <li><span class="accom-mark">◆</span> Founded WESFED in 2008 — grown to $3M+ private valuation</li>
+        <li><span class="accom-mark">◆</span> US Army Combat Infantry Team Leader — deployed to Afghanistan, 2010–11</li>
+        <li><span class="accom-mark">◆</span> Top 5% of software contributors worldwide on StackOverflow</li>
+        <li><span class="accom-mark">◆</span> Speaker at conferences and events since 2016</li>
+        <li><span class="accom-mark">◆</span> Built startup tech that secured $1M+ in funding (2014–2016)</li>
+        <li><span class="accom-mark">◆</span> MBA + BS Computer Science, Summa Cum Laude</li>
+      </ul>
+    </section>
 
     <!-- Projects -->
     <section class="section">
       <p class="section-label">Projects</p>
       <ul class="item-list">
-        <li>
-          <span class="item-name"><a href="https://wesfed.com" target="_blank" rel="noopener">WESFED</a></span>
-          <span class="item-desc">digital marketing agency</span>
-        </li>
         <li>
           <span class="item-name"><a href="https://clawdeploy.com" target="_blank" rel="noopener">ClawDeploy</a></span>
           <span class="item-desc">OpenClaw-as-a-Service</span>
@@ -49,7 +87,7 @@ import '../styles/global.css';
         </li>
         <li>
           <span class="item-name"><a href="https://peakagencysystems.com/slack26" target="_blank" rel="noopener">Peak Agency Systems</a></span>
-          <span class="item-desc">paid community for agency operators</span>
+          <span class="item-desc">community for agency operators</span>
         </li>
         <li>
           <span class="item-name">Skills Marketplace</span>
@@ -69,6 +107,10 @@ import '../styles/global.css';
       <p class="section-label">Writings</p>
       <ul class="item-list">
         <li>
+          <span class="item-name"><a href="/blog">Blog</a></span>
+          <span class="item-desc">agency growth, AI, and building things that last</span>
+        </li>
+        <li>
           <span class="item-name"><a href="https://themondayreset.com" target="_blank" rel="noopener">The Monday Reset</a></span>
           <span class="item-desc">weekly newsletter</span>
         </li>
@@ -85,21 +127,74 @@ import '../styles/global.css';
 
     <!-- Elsewhere -->
     <section class="section">
-      <p class="section-label">Elsewhere</p>
+      <p class="section-label">On the Web</p>
       <ul class="link-list">
-        <li><a href="https://x.com/realwesfoster" target="_blank" rel="noopener">X</a></li>
+        <li><a href="https://x.com/realwesfoster" target="_blank" rel="noopener">X @realwesfoster</a></li>
         <li><a href="https://linkedin.com/in/wesfoster" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/wesf90" target="_blank" rel="noopener">GitHub @wesf90</a></li>
         <li><a href="https://facebook.com/realwesfoster" target="_blank" rel="noopener">Facebook</a></li>
         <li><a href="https://wesfed.com" target="_blank" rel="noopener">wesfed.com</a></li>
         <li><a href="https://themondayreset.com" target="_blank" rel="noopener">themondayreset.com</a></li>
       </ul>
     </section>
 
+    <!-- X Feed -->
+    <section class="section">
+      <p class="section-label">Latest from X</p>
+      <div class="x-feed-wrapper" id="x-feed">
+        <a
+          class="twitter-timeline"
+          data-height="520"
+          data-chrome="nofooter noborders noheader transparent"
+          href="https://twitter.com/realwesfoster"
+        >Posts by @realwesfoster</a>
+      </div>
+    </section>
+
   </main>
 
   <footer class="site-footer">
-    <p>Clarksville, TN</p>
+    <span>Wes Foster</span>
+    <span>Clarksville, TN</span>
+    <a href="https://wesfed.com" target="_blank" rel="noopener">wesfed.com</a>
   </footer>
+
+  <!-- Scroll reveal -->
+  <script>
+    document.body.classList.add('js-reveal');
+    const observer = new IntersectionObserver(
+      entries => entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          observer.unobserve(e.target);
+        }
+      }),
+      { threshold: 0.08, rootMargin: '0px 0px -40px 0px' }
+    );
+    document.querySelectorAll('.section').forEach((el, i) => {
+      (el as HTMLElement).style.transitionDelay = `${i * 40}ms`;
+      observer.observe(el);
+    });
+  </script>
+
+  <!-- X / Twitter timeline widget -->
+  <script>
+    function loadXWidget() {
+      const theme = document.documentElement.getAttribute('data-theme') || 'light';
+      const anchor = document.querySelector('.twitter-timeline');
+      if (anchor) anchor.setAttribute('data-theme', theme);
+      const s = document.createElement('script');
+      s.src = 'https://platform.twitter.com/widgets.js';
+      s.async = true;
+      s.charset = 'utf-8';
+      document.body.appendChild(s);
+    }
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', loadXWidget);
+    } else {
+      loadXWidget();
+    }
+  </script>
 
 </body>
 </html>

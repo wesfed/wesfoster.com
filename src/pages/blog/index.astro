@@ -1,0 +1,71 @@
+---
+import { getCollection } from 'astro:content';
+import '../../styles/global.css';
+
+const posts = (await getCollection('blog')).sort(
+  (a, b) => b.data.date.getTime() - a.data.date.getTime()
+);
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — Wes Foster</title>
+  <meta name="description" content="Thoughts on agency growth, AI, and building systems that scale." />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <script is:inline>
+    (function() {
+      var stored = localStorage.getItem('wf-theme');
+      var theme = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+</head>
+<body>
+
+  <nav class="blog-nav">
+    <a href="/" class="back-link">← wesfoster.com</a>
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+      <span id="theme-icon">☀</span>
+    </button>
+  </nav>
+
+  <header class="blog-header">
+    <p class="blog-title">Blog</p>
+    <p class="blog-subtitle">Agency growth, AI, and building things that last.</p>
+  </header>
+
+  <main>
+    <ul class="post-list">
+      {posts.map(post => (
+        <li class="post-item">
+          <a href={`/blog/${post.slug}`} class="post-link">
+            <span class="post-name">{post.data.title}</span>
+            <span class="post-date">{post.data.date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
+          </a>
+          <p class="post-desc">{post.data.description}</p>
+        </li>
+      ))}
+    </ul>
+  </main>
+
+  <script>
+    const STORAGE_KEY = 'wf-theme';
+    const root = document.documentElement;
+    const toggle = document.getElementById('theme-toggle')!;
+    const icon = document.getElementById('theme-icon')!;
+    function applyTheme(theme: 'light' | 'dark') {
+      root.setAttribute('data-theme', theme);
+      icon.textContent = theme === 'dark' ? '☾' : '☀';
+      localStorage.setItem(STORAGE_KEY, theme);
+    }
+    const stored = localStorage.getItem(STORAGE_KEY) as 'light' | 'dark' | null;
+    applyTheme(stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+    toggle.addEventListener('click', () => {
+      applyTheme(root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+    });
+  </script>
+
+</body>
+</html>
