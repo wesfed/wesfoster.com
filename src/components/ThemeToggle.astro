@@ -1,0 +1,32 @@
+---
+---
+<button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme" title="Toggle light/dark mode">
+  <span id="theme-icon">☀</span>
+</button>
+
+<script>
+  const STORAGE_KEY = 'wf-theme';
+  const root = document.documentElement;
+  const toggle = document.getElementById('theme-toggle')!;
+  const icon = document.getElementById('theme-icon')!;
+
+  function getPreferred(): 'light' | 'dark' {
+    const stored = localStorage.getItem(STORAGE_KEY);
+    if (stored === 'light' || stored === 'dark') return stored;
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  }
+
+  function applyTheme(theme: 'light' | 'dark') {
+    root.setAttribute('data-theme', theme);
+    icon.textContent = theme === 'dark' ? '☾' : '☀';
+    localStorage.setItem(STORAGE_KEY, theme);
+  }
+
+  // Apply on load
+  applyTheme(getPreferred());
+
+  toggle.addEventListener('click', () => {
+    const current = root.getAttribute('data-theme');
+    applyTheme(current === 'dark' ? 'light' : 'dark');
+  });
+</script>

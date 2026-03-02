@@ -1,0 +1,169 @@
+/* ── Theme variables ── */
+:root {
+  --bg: #ffffff;
+  --text: #111111;
+  --muted: #888888;
+  --link: #0055cc;
+  --link-hover: #003399;
+  --section-label: #aaaaaa;
+  --divider: #e8e8e8;
+}
+
+[data-theme="dark"] {
+  --bg: #0f0f0f;
+  --text: #e2e2e2;
+  --muted: #666666;
+  --link: #5b9bf5;
+  --link-hover: #89b8ff;
+  --section-label: #555555;
+  --divider: #222222;
+}
+
+/* ── Reset & base ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  max-width: 580px;
+  margin: 0 auto;
+  padding: 3.5rem 1.5rem 5rem;
+}
+
+/* ── Header ── */
+.site-header {
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+
+.site-name {
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--text);
+}
+
+.site-tagline {
+  font-size: 0.875rem;
+  color: var(--muted);
+  margin-top: 0.2rem;
+}
+
+/* ── Theme toggle ── */
+.theme-toggle {
+  position: fixed;
+  top: 1.25rem;
+  right: 1.25rem;
+  background: none;
+  border: 1px solid var(--divider);
+  border-radius: 6px;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 0.8rem;
+  padding: 0.3rem 0.6rem;
+  line-height: 1;
+  transition: border-color 0.15s ease, color 0.15s ease;
+  user-select: none;
+}
+
+.theme-toggle:hover {
+  color: var(--text);
+  border-color: var(--muted);
+}
+
+/* ── Sections ── */
+.section {
+  margin-bottom: 2.25rem;
+}
+
+.section-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--section-label);
+  margin-bottom: 0.65rem;
+}
+
+/* ── Item list ── */
+.item-list {
+  list-style: none;
+}
+
+.item-list li {
+  padding: 0.35rem 0;
+  border-bottom: 1px solid var(--divider);
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.item-list li:last-child {
+  border-bottom: none;
+}
+
+.item-name {
+  font-weight: 500;
+  color: var(--text);
+  white-space: nowrap;
+}
+
+.item-name a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.item-name a:hover {
+  color: var(--link);
+}
+
+.item-desc {
+  font-size: 0.875rem;
+  color: var(--muted);
+  flex: 1;
+}
+
+.item-badge {
+  font-size: 0.72rem;
+  color: var(--section-label);
+  font-style: italic;
+  white-space: nowrap;
+}
+
+/* ── Links section ── */
+.link-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+}
+
+.link-list a {
+  font-size: 0.875rem;
+  color: var(--link);
+  text-decoration: none;
+}
+
+.link-list a:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+/* ── Footer ── */
+.site-footer {
+  margin-top: 3rem;
+  font-size: 0.78rem;
+  color: var(--section-label);
+}

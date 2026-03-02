@@ -1,0 +1,105 @@
+---
+import ThemeToggle from '../components/ThemeToggle.astro';
+import '../styles/global.css';
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wes Foster</title>
+  <meta name="description" content="Veteran. Marketer. Builder. Founder of WESFED." />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+  <!-- Prevent flash of wrong theme -->
+  <script is:inline>
+    (function() {
+      var stored = localStorage.getItem('wf-theme');
+      var theme = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+</head>
+<body>
+
+  <ThemeToggle />
+
+  <header class="site-header">
+    <p class="site-name">Wes Foster</p>
+    <p class="site-tagline">veteran · marketer · builder</p>
+  </header>
+
+  <main>
+
+    <!-- Projects -->
+    <section class="section">
+      <p class="section-label">Projects</p>
+      <ul class="item-list">
+        <li>
+          <span class="item-name"><a href="https://wesfed.com" target="_blank" rel="noopener">WESFED</a></span>
+          <span class="item-desc">digital marketing agency</span>
+        </li>
+        <li>
+          <span class="item-name"><a href="https://clawdeploy.com" target="_blank" rel="noopener">ClawDeploy</a></span>
+          <span class="item-desc">OpenClaw-as-a-Service</span>
+        </li>
+        <li>
+          <span class="item-name"><a href="https://skool.com/aiagentlab" target="_blank" rel="noopener">AI Agent Lab</a></span>
+          <span class="item-desc">free community for AI builders</span>
+        </li>
+        <li>
+          <span class="item-name"><a href="https://peakagencysystems.com/slack26" target="_blank" rel="noopener">Peak Agency Systems</a></span>
+          <span class="item-desc">paid community for agency operators</span>
+        </li>
+        <li>
+          <span class="item-name">Skills Marketplace</span>
+          <span class="item-desc">connecting agencies with talent</span>
+          <span class="item-badge">coming soon</span>
+        </li>
+        <li>
+          <span class="item-name">Client Dashboard</span>
+          <span class="item-desc">unified reporting for agency clients</span>
+          <span class="item-badge">coming soon</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Writings -->
+    <section class="section">
+      <p class="section-label">Writings</p>
+      <ul class="item-list">
+        <li>
+          <span class="item-name"><a href="https://themondayreset.com" target="_blank" rel="noopener">The Monday Reset</a></span>
+          <span class="item-desc">weekly newsletter</span>
+        </li>
+        <li>
+          <span class="item-name"><a href="https://x.com/realwesfoster" target="_blank" rel="noopener">X Threads</a></span>
+          <span class="item-desc">agency growth, AI, entrepreneurship</span>
+        </li>
+        <li>
+          <span class="item-name"><a href="https://youtube.com/@wesfosterpeak" target="_blank" rel="noopener">YouTube</a></span>
+          <span class="item-desc">@wesfosterpeak</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Elsewhere -->
+    <section class="section">
+      <p class="section-label">Elsewhere</p>
+      <ul class="link-list">
+        <li><a href="https://x.com/realwesfoster" target="_blank" rel="noopener">X</a></li>
+        <li><a href="https://linkedin.com/in/wesfoster" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://facebook.com/realwesfoster" target="_blank" rel="noopener">Facebook</a></li>
+        <li><a href="https://wesfed.com" target="_blank" rel="noopener">wesfed.com</a></li>
+        <li><a href="https://themondayreset.com" target="_blank" rel="noopener">themondayreset.com</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Clarksville, TN</p>
+  </footer>
+
+</body>
+</html>
